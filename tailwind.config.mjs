@@ -5,8 +5,8 @@ export default {
 		extend: {
 			colors: {
 				'black': '#000814',
-				'white': 'F8F9FA',
-				'gray': 'DEE2E6',
+				'white': '#F8F9FA',
+				'gray': '#DEE2E6',
 
 			},
 			fontSize: {
