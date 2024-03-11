@@ -1,0 +1,32 @@
+---
+import { Image } from 'astro:assets'
+import heroImage from '../../src/images/heroImage.png'
+---
+
+<div class=" h-full lg:flex lg:flex-row lg:justify-center lg:items-center mt-[5rem]">
+    <div class=" lg:mr-[6rem]">
+        <p class=" font-medium">Trabajo creativo, mentes creativas</p>
+        <h1 class=" lg:text-3xl font-bold w-[435px] mt-[1rem] mb-[3rem]">Danos tu marca, crece con nosotros</h1>
+        <p class=" font-light  my-[2rem]  w-[400px]">
+            Agencia de Marketing Digital orientada a la creación de contenidos y estrategias digitales
+        </p>
+        <a class="button bg-black text-white py-3 px-8 rounded-2xl">
+            Descubrir
+        </a>
+    </div>
+    <Image src={heroImage} alt={'heroImage'}/>
+</div>
+
+
+
+<style>
+    .button{
+        cursor: pointer;
+    }
+    .button:hover{
+        background-color: #DEE2E6;
+        color: black;
+
+        transition: all 0.2s ease;
+    }
+</style>
