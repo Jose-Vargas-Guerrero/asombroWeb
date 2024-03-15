@@ -1,0 +1,30 @@
+.cardTitle{
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+
+.card{
+    margin: 3rem 4rem;
+    height: 430px;
+    width: 360px;
+    border-radius: 20px;
+
+}
+
+.slide{
+    background-color: chocolate;
+    height: 430px;
+    border-radius: 20px;
+}
+
+.slide img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
