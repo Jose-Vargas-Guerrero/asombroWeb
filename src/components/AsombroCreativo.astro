@@ -1,0 +1,31 @@
+---
+import SwiperCard from '../components/reactComponents/SwiperCard'
+---
+
+<div class=" container h-auto">
+    <div class=" lg:flex lg:flex-row lg:justify-center lg:items-center">
+        <div>
+            <p class=" font-medium text-xs">QUIENES SOMOS</p>
+        <h1 class=" lg:text-xl font-bold w-[435px] mt-[1rem] mb-[2rem]">Asombro creativo</h1>
+        </div>
+        <p class=" font-light  my-[2rem]  w-[400px]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo amet posuere porta vitae mi accumsan. Ultricies mauris, hab
+        </p>
+    </div>
+    <div class="swiper-container h-auto w-full ">
+        <div class=" h-auto flex flex-row justify-center">
+            <SwiperCard title="Servicio 1" client:load/>
+            <SwiperCard title="Servicio 2" client:load/>
+        </div>
+        <div class=" h-auto flex flex-row justify-center">
+            <SwiperCard title="Servicio 3" client:load/>
+            <SwiperCard title="Servicio 4" client:load/>
+        </div>
+    </div>
+</div>
+
+
+
+<style>
+ 
+</style>
