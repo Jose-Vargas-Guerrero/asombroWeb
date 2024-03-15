@@ -1,24 +1,31 @@
 ---
-import logo from '/src/images/logo (2).png'
+import logo from '/src/images/LOGOASO2Mesa de trabajo 1.png'
 import { Image } from 'astro:assets'
 ---
 
 
-<nav class=" flex flex-row my-8">
-    <div class="  w-[20%] flex justify-end ">
-        <Image class=' w-[50px] h-[50px] fixed' src={logo} alt={'logo'} />
+<nav class=" navbar flex flex-row items-center">
+    <div class=" w-[20%] flex justify-end ">
+        <Image class=' w-[25px] h-[30px] my-[20px]' src={logo} alt={'logo'} />
     </div>
         <div class=" w-full fixed flex justify-end items-center space-x-8 px-[12%] ">
-            <a>Inicio</a>
-            <a>Quienes somos</a>
-            <a>Asombro Creativo</a>
-            <a>Marcas</a>
-            <a>Servicios</a>
-            <a>Contacto</a> 
+            <a href="#hero">Inicio</a>
+            <a href="#QuienesSomos">Quienes somos</a>
+            <a href="#AsombroCreativo">Asombro Creativo</a>
+            <a href="#marcas">Marcas</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#">Contacto</a> 
         </div>
 </nav>
 
 
 <style>
-
+.navbar{
+    z-index: 4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+}
 </style>
