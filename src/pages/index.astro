@@ -5,7 +5,7 @@ import Hero from '../components/Hero.astro'
 import SobreNosotros from '../components/SobreNosotros.astro'
 import AsombroCreativo from '../components/AsombroCreativo.astro'
 import Marcas from '../components/Marcas.astro'
-
+import Servicios from '../components/Servicios.astro'
 ---
 
 <Layout title="Welcome to Astro.">
@@ -15,9 +15,12 @@ import Marcas from '../components/Marcas.astro'
 		<SobreNosotros/>
 		<AsombroCreativo/>
 		<Marcas/>
+		<Servicios/>
 	</main>
 </Layout>
 
-<style>
-
+<style is="global">
+	main{
+		scroll-behavior: smooth
+	}
 </style>
