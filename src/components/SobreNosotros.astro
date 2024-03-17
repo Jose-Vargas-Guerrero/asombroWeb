@@ -1,32 +1,53 @@
 ---
-import { Image } from "astro:assets"
-import sobreNosotros from '../images/sobrenosotros.png'
+import { Image } from "astro:assets";
+import sobreNosotros from "../images/sobrenosotros.png";
 ---
 
-<div id="QuienesSomos" class=" h-screen lg:flex lg:flex-row lg:items-center lg:justify-center">
-    <Image src={sobreNosotros} alt="sobrenosotros" class=" lg:h-[470px] lg:w-[500px]"/>
-    <div class=" lg:ml-[8rem]">
-        <p class=" font-medium">Quienes somos</p>
-        <h1 class=" lg:text-xl font-bold w-[435px] mt-[1rem] mb-[2rem]">Diseño y desarrollo
-            Para una solución</h1>
-        <p class=" font-light  my-[2rem]  w-[400px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo amet posuere porta vitae mi accumsan. Ultricies mauris, habitasse nec mauris sagittis imperdiet lobortis porttitor. Ipsum mi sed uta aliquet ut. Turpis viverra volutpat sed eu porta morbi egesta ut   hac rutrum ut augue vitae, nec, ut. Nibh nibh qua
-        </p>
-        <a href="#AsombroCreativo" class="button bg-black text-white py-3 px-8 rounded-2xl">
-            Ver más
-        </a>
-    </div>
+<div
+  id="QuienesSomos"
+  class="h-screen lg:flex lg:flex-row lg:items-center lg:justify-center"
+>
+  <Image
+    src={sobreNosotros}
+    alt="sobrenosotros"
+    class="lg:h-[470px] lg:w-[500px]"
+  />
+  <div class="lg:ml-[8rem]">
+    <p class="font-medium">Esto es Asombro</p>
+    <h1 class="lg:text-xl font-bold w-[435px] mt-[1rem] mb-[0.5rem]">
+      Diseño y desarrollo Para una solución
+    </h1>
+    <p class="font-light my-[0.5rem] w-[400px]">
+      Somos una agencia de marketing digital en constante crecimiento, apuntando
+      a solucionar con ideas disruptivas el mercado actual, sin tanto bla bla,
+      hacemos marketing, si, pero lo que hacemos asombra y conecta con tu
+      publico potencial
+      <strong>¡Más de 20 marcas han confiado en nuestro trabajo!</strong>
+    </p>
+    <p class="font-medium">Asombramos, innovamos y hacemos</p>
+    <p class="font-light mb-[2rem] w-[400px]">
+      Asombramos con diseño profesional, creativo y disruptivo Innovamos con
+      estrategias de contenido únicas para cada nicho. Hacemos que tus clientes
+      conecten desde el primer momento de forma natural como abrir la puerta,
+      entretenerse en redes sociales o tomar agua.
+    </p>
+    <a
+      href="#AsombroCreativo"
+      class="button bg-black text-white py-3 px-8 rounded-2xl"
+    >
+      Ver más
+    </a>
+  </div>
 </div>
 
-
 <style>
-.button{
-        cursor: pointer;
-    }
-    .button:hover{
-        background-color: #DEE2E6;
-        color: black;
+  .button {
+    cursor: pointer;
+  }
+  .button:hover {
+    background-color: #dee2e6;
+    color: black;
 
-        transition: all 0.2s ease;
-    }
+    transition: all 0.2s ease;
+  }
 </style>
