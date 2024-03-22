@@ -1,0 +1,22 @@
+@keyframes fadeIn {
+    0% {
+      right: -400px;
+    }
+    100% {
+      right: 0px;
+    }
+  }
+
+  .false{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: black;
+    color: white;
+  }
+
+
+  .true{
+    display: none;
+  }

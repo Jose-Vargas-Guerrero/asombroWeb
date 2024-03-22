@@ -1,6 +1,7 @@
 ---
 import logo from '/src/images/LOGOASO2Mesa de trabajo 1.png'
 import { Image } from 'astro:assets'
+import Menu from './reactComponents/Menu'
 ---
 
 
@@ -14,7 +15,8 @@ import { Image } from 'astro:assets'
             <a href="#AsombroCreativo">Asombro Creativo</a>
             <a href="#marcas">Marcas</a>
             <a href="#servicios">Servicios</a>
-            <a href="#contactenos">Contacto</a> 
+            <a href="#contactenos">Contacto</a>
+            <Menu client:load/>
         </div>
 </nav>
 
