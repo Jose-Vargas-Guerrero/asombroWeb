@@ -1,28 +1,39 @@
----
-interface Props {
-  title: string;
-}
 
-const { title } = Astro.props;
----
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
+    <meta name="Agencia de marketing digital Asombro" content="Asombro Web" />
+    <meta name="description" content="Somos una agencia de marketing digital especializada en ayudar a empresas a crecer en línea. Ofrecemos servicios integrales de marketing digital, incluyendo proyectos web, publicidad en redes sociales y mucho más. ¡Contacta con nosotros para impulsar tu presencia en línea!">
+</head>
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+    <title>Agencia de marketing digital Asombro</title>
   </head>
   <body>
-    <slot />
+    <div class="main-container">
+      <slot />
+    </div>
   </body>
 </html>
 
 <style is="global">
-html{
+
+
+
+html, body {
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
+
+.main-container {
+  margin: 0;
+  padding: 0;
+}
+
+
 </style>
