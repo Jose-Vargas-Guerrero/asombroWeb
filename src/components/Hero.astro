@@ -3,18 +3,22 @@ import { Image } from 'astro:assets'
 import heroImage from '../../src/images/heroImage.png'
 ---
 
-<div id="hero" class=" h-full lg:flex lg:flex-row lg:justify-center lg:items-center mt-[5rem]">
-    <div class=" lg:mr-[6rem]">
-        <p class=" font-medium">Trabajo creativo, mentes creativas</p>
-        <h1 class=" lg:text-3xl font-bold w-[435px] mt-[1rem] mb-[3rem]">Danos tu marca, crece con nosotros</h1>
-        <p class=" font-light  my-[2rem]  w-[400px]">
+<div id="hero" class=" h-[100vh]  lg:h-full flex flex-col-reverse justify-center items-center lg:flex lg:flex-row lg:justify-center lg:items-center lg:mt-[5rem]">
+    <div class=" mr-0  lg:mr-[6rem]">
+        <p class=" w-full  text-center lg:text-left lg:font-medium">Trabajo creativo, mentes creativas</p>
+        <h1 class=" w-full  text-center text-xl px-4 lg:px-0 lg:text-left lg:text-3xl my-2 font-bold lg:w-[435px] lg:mt-[1rem] lg:mb-[3rem]">Danos tu marca, crece con nosotros</h1>
+        <p class=" w-full  text-center text-[1.3rem] lg:text-sm lg:text-left font-light  my-[2rem]  lg:w-[400px]">
             Somos especialistas en creación de contenido y estrategias digitales 
         </p>
-        <a href="#QuienesSomos" class="button bg-black text-white py-3 px-8 rounded-2xl">
-            Descubrir
-        </a>
+        <div class="w-full flex flex-row justify-center items-center lg:justify-start">
+            <a href="#QuienesSomos" class="button bg-black text-white py-3 px-8 rounded-2xl">
+                Descubrir
+            </a>
+        </div>
     </div>
-    <Image src={heroImage} alt={'heroImage'}/>
+    <Image src={heroImage} loading="eager" alt={'heroImage'}
+    class='hidden lg:block'
+    />
 </div>
 
 

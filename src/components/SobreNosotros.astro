@@ -3,40 +3,40 @@ import { Image } from "astro:assets";
 import sobreNosotros from "../images/sobrenosotros.png";
 ---
 
-<div
-  id="QuienesSomos"
-  class="h-screen lg:flex lg:flex-row lg:items-center lg:justify-center"
->
-  <Image
+<div id="QuienesSomos" class="h-auto lg:h-screen lg:flex lg:flex-row lg:items-center lg:justify-center">
+  <div>
+    <Image
     src={sobreNosotros}
     alt="sobrenosotros"
     class="lg:h-[470px] lg:w-[500px]"
   />
+  </div>
   <div class="lg:ml-[8rem]">
-    <p class="font-medium">Esto es Asombro</p>
-    <h1 class="lg:text-xl font-bold w-[435px] mt-[1rem] mb-[0.5rem]">
+    <p class=" text-[1.2rem] lg:text-[1rem] mt-[2.5rem] font-medium text-center lg:text-left">Esto es Asombro</p>
+    <h1 class=" text-center text-xl lg:text-left font-bold lg:w-[435px] mt-[1rem] mb-[0.5rem]">
       Diseño y desarrollo Para una solución
     </h1>
-    <p class="font-light my-[0.5rem] w-[400px]">
+    <p class="font-light text-center lg:text-left text-[1.2rem] px-3 lg:px-0 lg:text-[1rem] my-[1rem] lg:w-[400px]">
       Somos una agencia de marketing digital en constante crecimiento, apuntando
       a solucionar con ideas disruptivas el mercado actual, sin tanto bla bla,
       hacemos marketing, si, pero lo que hacemos asombra y conecta con tu
       publico potencial
       <strong>¡Más de 20 marcas han confiado en nuestro trabajo!</strong>
     </p>
-    <p class="font-medium">Asombramos, innovamos y hacemos</p>
-    <p class="font-light mb-[2rem] w-[400px]">
+    <p class="font-medium text-[1.2rem]  mt-[2rem] lg:mt-0 lg:text-[1rem] text-center lg:text-left ">Asombramos, innovamos y hacemos</p>
+    <p class="font-light text-[1.2rem] text-center lg:text-left px-3 lg:px-0 lg:text-[1rem] my-[1rem] lg:w-[400px]">
       Asombramos con diseño profesional, creativo y disruptivo Innovamos con
       estrategias de contenido únicas para cada nicho. Hacemos que tus clientes
       conecten desde el primer momento de forma natural como abrir la puerta,
-      entretenerse en redes sociales o tomar agua.
+      entretenerse en redes sociales o tomar agua.  
     </p>
-    <a
-      href="#AsombroCreativo"
+    <div class="w-full flex flex-row my-5 justify-center items-center lg:justify-start">
+      <a href="#AsombroCreativo"
       class="button bg-black text-white py-3 px-8 rounded-2xl"
     >
       Ver más
     </a>
+    </div>
   </div>
 </div>
 

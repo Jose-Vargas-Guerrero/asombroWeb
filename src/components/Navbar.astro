@@ -7,15 +7,15 @@ import Menu from './reactComponents/Menu'
 
 <nav class=" navbar flex flex-row items-center">
     <div class=" w-[20%] flex justify-end ">
-        <Image class=' w-[25px] h-[30px] my-[20px]' src={logo} alt={'logo'} />
+        <Image loading="eager" class=' w-[25px] h-[30px] my-[20px]' src={logo} alt={'logo'} />
     </div>
         <div class=" w-full fixed flex justify-end items-center space-x-8 px-[12%] ">
-            <a href="#hero">Inicio</a>
-            <a href="#QuienesSomos">Quienes somos</a>
-            <a href="#AsombroCreativo">Asombro Creativo</a>
-            <a href="#marcas">Marcas</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#contactenos">Contacto</a>
+            <a class=" hidden lg:block" href="#hero">Inicio</a>
+            <a class=" hidden lg:block" href="#QuienesSomos">Quienes somos</a>
+            <a class=" hidden lg:block" href="#AsombroCreativo">Asombro Creativo</a>
+            <a class=" hidden lg:block" href="#marcas">Marcas</a>
+            <a class=" hidden lg:block" href="#servicios">Servicios</a>
+            <a class=" hidden lg:block" href="#contactenos">Contacto</a>
             <Menu client:load/>
         </div>
 </nav>
@@ -28,6 +28,6 @@ import Menu from './reactComponents/Menu'
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 1);
 }
 </style>
