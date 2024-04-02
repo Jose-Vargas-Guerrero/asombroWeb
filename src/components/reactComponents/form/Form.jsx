@@ -14,10 +14,10 @@ function Form() {
         })
         .then(
           () => {
-            console.log('SUCCESS!');
+            window.alert('Propuesta Enviada');
           },
           (error) => {
-            console.log('FAILED...', error.text);
+            window.alert('Propuesta no enviada', error.text);
           },
         );
     };
@@ -34,7 +34,7 @@ function Form() {
         <textarea name="message" rows="4" placeholder='Asunto...' required
         className=' my-6 lg:ml-5 block lg:w-[700px] p-2.5 mt-[2rem] w-full  bg-white/80 placeholder:text-black  pl-8 border-none text-sm text-gray-900 bg-gray-50 rounded-[30px] border border-gray-300  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black'/>
         <div className=' flex justify-center items-center'>
-          <input onClick={() => {window.alert("Mensaje Enviado")}} type="submit" value="Send" className='bg-black mt-[2rem] text-white py-[0.6rem] px-[3rem] rounded-full'/>
+          <input type="submit" value="Send" className='bg-black mt-[2rem] text-white py-[0.6rem] px-[3rem] rounded-full'/>
         </div>
       </form>
     </div>
