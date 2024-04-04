@@ -26,7 +26,7 @@ function Form() {
     <div>
       <form ref={form} onSubmit={sendEmail}>
         <input type="text" name="user_name" placeholder='Nombre' required
-        className=' my-6 lg:m-5 h-[80px] w-full bg-white/80 placeholder:text-black  pl-8 flex flex-col justify-between lg:h-[80px] lg:w-[702px]  rounded-[35px]'
+        className=' my-6 lg:m-5 h-[80px]   bg-white/80 placeholder:text-black  pl-8 flex flex-col justify-between lg:h-[80px] lg:w-[702px]  rounded-[35px]'
         />
         <input type="email" name="user_email" placeholder='Email' required
          className='my-6 lg:m-5 h-[80px] w-full bg-white/80 placeholder:text-black  pl-8 flex flex-col justify-between lg:h-[80px] lg:w-[702px]  rounded-[35px]'
