@@ -3,15 +3,15 @@ import { Image } from "astro:assets";
 import sobreNosotros from "../images/sobrenosotros.png";
 ---
 
-<div id="QuienesSomos" class="h-auto lg:h-screen lg:flex lg:flex-row lg:items-center lg:justify-center">
+<div id="QuienesSomos" class="h-auto md:w-screen md:flex md:flex-col md:justify-center md:items-center lg:h-screen lg:flex lg:flex-row lg:items-center lg:justify-center">
   <div>
     <Image
     src={sobreNosotros}
     alt="sobrenosotros"
-    class="lg:h-[470px] lg:w-[500px]"
+    class="lg:h-[470px] lg:w-[500px] mx-auto"
   />
   </div>
-  <div class="lg:ml-[8rem]">
+  <div class=" mx-[3rem] xl:mx-[8rem]">
     <p class=" text-[1.2rem] lg:text-[1rem] mt-[2.5rem] font-medium text-center lg:text-left">Esto es Asombro</p>
     <h1 class=" text-center text-xl lg:text-left font-bold lg:w-[435px] mt-[1rem] mb-[0.5rem]">
       Diseño y desarrollo Para una solución
