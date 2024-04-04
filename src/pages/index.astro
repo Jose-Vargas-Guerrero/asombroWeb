@@ -1,26 +1,68 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Navbar from '../components/Navbar.astro'
-import Hero from '../components/Hero.astro'
-import SobreNosotros from '../components/SobreNosotros.astro'
-import AsombroCreativo from '../components/AsombroCreativo.astro'
-import Marcas from '../components/Marcas.astro'
-import Servicios from '../components/Servicios.astro'
-import Contactenos from '../components/Contactenos.astro'
-import Footer from '../components/Footer.astro'
-import WhatsAppButton from '../components/WhatsAppButton.astro'
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.astro";
+import SobreNosotros from "../components/SobreNosotros.astro";
+import AsombroCreativo from "../components/AsombroCreativo.astro";
+import Marcas from "../components/Marcas.astro";
+import Servicios from "../components/Servicios.astro";
+import Contactenos from "../components/Contactenos.astro";
+import Footer from "../components/Footer.astro";
+import WhatsAppButton from "../components/WhatsAppButton.astro";
 ---
 
 <Layout>
-	<main class=" overflow-hidden">
- 		<Navbar/>
-		<Hero/>
-		<SobreNosotros/>
-		<AsombroCreativo/>
-		<Marcas/>
-		<Servicios/>
-		<Contactenos/>
-		<Footer/>
-		<WhatsAppButton/>
-	</main>
+  <main class="overflow-hidden">
+    <div class="container">
+      <Navbar />
+      <Hero />
+      <SobreNosotros />
+      <AsombroCreativo />
+      <Marcas />
+      <Servicios />
+      <Contactenos />
+      <Footer />
+      <WhatsAppButton />
+    </div>
+  </main>
 </Layout>
+
+<style>
+  .container {
+    position: relative;
+  }
+
+  /* .container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/logoLineal.png");
+    background-size: 70vw;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: right top;
+    opacity: 0.9;
+    z-index: -1;
+  } */
+
+
+.container::after {
+  content: "";
+  position: fixed;
+  top: -10%;
+  right: -10%;
+  width: 120%;
+  height: 120%; 
+  background-image: url("../images/logoLineal.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right top;
+  opacity: 0.2;
+  z-index: -1;
+  transform: rotate(-8deg);
+}
+
+</style>
